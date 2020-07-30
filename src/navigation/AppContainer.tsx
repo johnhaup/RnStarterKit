@@ -4,6 +4,8 @@ import {
   PartialState,
 } from '@react-navigation/native';
 import React, { useRef } from 'react';
+import { SplashScreen } from '../screens/loading/SplashScreen';
+import { useTypedStoreState } from '../store/hooks';
 import { RootNavigator } from './navigators/RootNavigator';
 
 // Gets the current screen from navigation state
@@ -22,6 +24,7 @@ const getActiveRouteName = (
 
 export const AppContainer = () => {
   const routeNameRef = useRef<string>('');
+  const loadingComplete = useTypedStoreState((s) => s.session.loadingComplete);
 
   const onStateChange = (state: NavigationState | undefined) => {
     if (!state) {
@@ -41,7 +44,7 @@ export const AppContainer = () => {
 
   return (
     <NavigationContainer onStateChange={onStateChange}>
-      <RootNavigator />
+      {loadingComplete ? <RootNavigator /> : <SplashScreen />}
     </NavigationContainer>
   );
 };
