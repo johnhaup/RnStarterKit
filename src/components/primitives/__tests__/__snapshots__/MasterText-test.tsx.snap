@@ -1,0 +1,73 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`renders correctly 1`] = `
+<Text
+  style={
+    Array [
+      Object {
+        "color": "#2d3436",
+        "fontSize": 15,
+        "lineHeight": 20,
+      },
+      Object {
+        "color": undefined,
+      },
+      Object {
+        "fontSize": 11,
+        "lineHeight": 15,
+      },
+      Object {
+        "fontSize": 13,
+        "lineHeight": 18,
+      },
+      Object {
+        "fontSize": 17,
+        "lineHeight": 23,
+      },
+      Object {
+        "fontSize": 24,
+        "fontWeight": "800",
+        "lineHeight": 30,
+      },
+      Object {
+        "color": "#b2bec3",
+      },
+      Object {
+        "color": "#ffffff",
+      },
+      Object {
+        "color": "#d63031",
+      },
+      Object {
+        "fontWeight": "800",
+      },
+      Object {
+        "fontWeight": "500",
+      },
+      undefined,
+    ]
+  }
+>
+  Hello
+</Text>
+`;
+
+exports[`renders correctly with props 1`] = `
+<Text
+  style={
+    Array [
+      Object {
+        "color": "#2d3436",
+        "fontSize": 15,
+        "lineHeight": 20,
+      },
+      Object {
+        "color": undefined,
+      },
+      undefined,
+    ]
+  }
+>
+  Hello
+</Text>
+`;

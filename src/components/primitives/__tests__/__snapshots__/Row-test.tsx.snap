@@ -1,0 +1,60 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`renders correctly 1`] = `
+<View
+  style={
+    Array [
+      Object {
+        "alignItems": "center",
+        "flexDirection": "row",
+      },
+    ]
+  }
+>
+  <View />
+  <View />
+</View>
+`;
+
+exports[`renders correctly with all props 1`] = `
+<View
+  between={true}
+  flex={true}
+  screenWidth={true}
+  stretch={true}
+  style={
+    Array [
+      Object {
+        "alignItems": "center",
+        "flexDirection": "row",
+      },
+      Object {
+        "width": 750,
+      },
+      Object {
+        "justifyContent": "space-between",
+      },
+      Object {
+        "alignSelf": "stretch",
+      },
+      Object {
+        "flex": 1,
+      },
+      Object {
+        "height": 10,
+      },
+      Array [
+        Object {
+          "backgroundColor": "blue",
+        },
+        Object {
+          "backgroundColor": "red",
+        },
+      ],
+    ]
+  }
+>
+  <View />
+  <View />
+</View>
+`;
