@@ -32,7 +32,6 @@ const styleSheetProps = [
   'red',
   'bold',
   'medBold',
-  'color',
 ];
 
 export const MasterText = ({ children, style, color, ...rest }: Props) => {

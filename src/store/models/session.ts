@@ -1,7 +1,9 @@
 import { action, Action } from 'easy-peasy';
 
-export interface SessionModel {
+interface SessionState {
   loadingComplete: boolean;
+}
+export interface SessionModel extends SessionState {
   setLoadingComplete: Action<SessionModel, boolean>;
 }
 
@@ -9,8 +11,10 @@ export const sessionModel: SessionModel = {
   // state
   loadingComplete: false,
   // actions
-  setLoadingComplete: action((state, loadingComplete) => ({
-    ...state,
-    loadingComplete,
-  })),
+  setLoadingComplete: action(
+    (state, loadingComplete): SessionState => ({
+      ...state,
+      loadingComplete,
+    }),
+  ),
 };
