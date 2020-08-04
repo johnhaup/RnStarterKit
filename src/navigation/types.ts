@@ -11,6 +11,8 @@ export enum Modals {
 }
 
 export enum Screens {
+  // Login
+  ONBOARDING = 'ONBOARDING',
   // TabOne
   A_SCREEN = 'A_SCREEN',
   B_SCREEN = 'B_SCREEN',

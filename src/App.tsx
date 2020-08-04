@@ -15,3 +15,15 @@ const App = () => {
 };
 
 export default App;
+
+/*
+
+TODO:
+Auth0 login
+ErrorBoundary
+Sentry
+Animated widgets
+fastlane
+apollo / axios
+
+*/

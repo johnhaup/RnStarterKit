@@ -1,8 +1,8 @@
-import React, { ReactElement } from 'react';
+import React from 'react';
 import { StyleSheet, View, ViewStyle } from 'react-native';
 
 interface Props {
-  children?: ReactElement | ReactElement[];
+  children?: JSX.Element | JSX.Element[];
   style?: ViewStyle;
 }
 
