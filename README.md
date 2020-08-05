@@ -19,3 +19,14 @@ Uses [this fix](https://github.com/facebook/jest/issues/2663#issuecomment-341384
 ### State Management
 
 [Easy Peasy](https://easy-peasy.now.sh/docs/introduction/)
+
+### Package name
+
+You can use [this guide](https://dev.to/karanpratapsingh/quick-guide-for-updating-package-name-in-react-native-3ei3) to update the package name from `rnstarterkit`.
+
+### Auth0
+
+Set up with passwordless login and google social login.
+
+Update values in `./services/auth0`.
+Updated `auth0_domain` in `./android/app/src/main/res/values/strings.xml`.

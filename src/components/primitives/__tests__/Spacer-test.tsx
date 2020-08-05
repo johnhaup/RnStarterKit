@@ -1,7 +1,3 @@
-/**
- * @format
- */
-
 import React from 'react';
 import 'react-native';
 import { StyleSheet } from 'react-native';
